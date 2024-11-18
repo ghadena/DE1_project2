@@ -75,5 +75,31 @@ SET
 
 select * from healthcare_spending;
 
-
+CREATE TABLE merged_table AS
+SELECT 
+    c.id AS country_id, 
+    c.country_name, 
+    c.region, 
+    c.year, 
+    c.gdp_current_usd,
+    c.gdp_growth_annual_percent,
+    c.gdp_per_capita_current_usd,
+    c.gdp_per_capita_growth_annual_percent,
+    c.population_growth_annual_percent,
+    c.population_total,
+    hs.id,
+    hs.current_health_expenditure_gdp, 
+    hs.health_expenditure_per_capita,
+    hs.gov_health_expenditure,
+    hs.private_health_expenditure,
+    hs.external_health_expenditure,
+    hs.out_of_pocket_expenditure
+FROM 
+    country c
+LEFT JOIN 
+    healthcare_spending hs
+ON 
+    c.id = hs.id;
+    
+select * from merged_table;
 
