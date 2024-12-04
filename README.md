@@ -1,5 +1,5 @@
 # DE1_project2
-Done by: Ghadena Hgaig, Karoly Takacs, Eniko Palko and Russu_Anastasiia
+Done by: Ghadena Hgaig, Karoly Takacs, Eniko Palko and Anastasiia Russu 
 
 Data Engineering 1: Project 2  
 Analysing the Impact of Healthcare Spending on Life Expectancy Across Regions and Spending Types 
